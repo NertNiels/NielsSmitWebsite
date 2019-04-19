@@ -5,7 +5,11 @@ body {
 }
 
 h1 , h2, h3, a, p {
-	font-family: 'Arvo', sans-serif;
+	font-family: 'Source Code Pro', cursive;
+}
+
+#maintitle {
+	letter-spacing: 10px;
 }
 
 #homecontainer {
@@ -34,4 +38,20 @@ h1 , h2, h3, a, p {
 #homecontainer h1, #homecontainer h3 {
 	color: white;
 	text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#aboutmecontainer {
+	width: 100vw;
+	background-color: rgb(32, 32, 32);
+	padding-top: 5em;
+	padding-bottom: 5em;
+}
+
+#aboutmecontainer h2 {
+	text-align: center;
+	margin: 0;
+	color: white;
+	letter-spacing: 10px;
 }
