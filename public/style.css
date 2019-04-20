@@ -1,5 +1,5 @@
 html {
-	scroll-behavior: smooth;
+	/*scroll-behavior: smooth;*/
 }
 
 body {
@@ -11,34 +11,54 @@ h1 , h2, h3, a, p {
 }
 
 p {
-	margin-left: auto;
-	margin-right: auto;
 	font-size: 1.5em;
 }
 
-.paragraph {
-	width: 45em;
+tr p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+tr {
+	vertical-align: top;
+}
+
+.numbercontainer {
+	width: 5em;
+}
+
+.textcontainer {
+	width: 70em;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @media screen and (max-width:80em) {
-	.paragraph {
-		width: 30em;
+	.textcontainer {
+		width: 50em;
+	}
+	.numbercontainer {
+		width: 4em;
 	}
 }
 
 @media screen and (max-width:60em) {
-	.paragraph {
-		width: 20em;
+	.textcontainer {
+		width: 30em;
+	}
+	.numbercontainer {
+		width: 3em;
 	}
 }
 
 @media screen and (max-width:40em) {
-	.paragraph {
+	.textcontainer {
 		width: unset;
-	}
-	p {
 		margin-left: 5em;
 		margin-right: 5em;
+	}
+	.numbercontainer {
+		width: 1em;
 	}
 }
 
@@ -84,9 +104,19 @@ h2 {
 	-moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background-color: rgb(0, 0, 0, 0.5);
     
     width: 100%;
+}
+
+#homecontainer #maintitle_container .background {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	z-index: -1;
+	background-color: rgb(0, 0, 0);
+	opacity: 0.5;
 }
 
 #readmore {
@@ -145,6 +175,7 @@ h2 {
 	text-align: center;
 	letter-spacing: 10px;
 }
+
 
 .tab {
 	padding-left: 5em;

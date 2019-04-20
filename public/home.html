@@ -4,35 +4,85 @@
 	<title>Niels Smit</title>
 	<link href="https://fonts.googleapis.com/css?family=Gruppo|Montserrat|Poiret+One|Source+Code+Pro" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+	</script>
 </head>
 <body>
 
 	<div id="homecontainer">
 		<div id="maintitle_container">
+
 			<h1 id="maintitle">NIELS SMIT</h1>
 			<h3>Geïnteresseerde havo 4 leerling.</h3>
+			<div class="background"></div>
 		</div>
 		<a id="readmore" href="#aboutmecontainer"><h2>READ MORE</h2></a>
 	</div>
 	<div id="aboutmecontainer">
 		<div>
 			<h2>WIE BEN IK</h2>
-			<p class="paragraph">
-				Mijn naam is Niels Smit. Ik ben een 16 jaar oude havo 4 leerling. Ik ben zeer geïnteresseerd in programmeren, muziek en wiskunde. Mijn hobbies zijn dan ook muziek maken en programmeren. Ik programmeer zowel thuis als op school. Op school ben ik bezig met een project voor het maken van een schonere stad: de Greencontainer. Thuis ben ik bezig met het maken van een spel. Ik heb dit spel nog geen naam gegeven, want ik heb geen idee hoe ik het moet noemen.
-			</p>
+			<div class="textcontainer">
+				<p class="paragraph">
+					Mijn naam is Niels Smit. Ik ben een 16 jaar oude havo 4 leerling. Ik ben zeer geïnteresseerd in programmeren, muziek en wiskunde. Mijn hobbies zijn dan ook muziek maken en programmeren. Ik programmeer zowel thuis als op school. Op school ben ik bezig met een project voor het maken van een schonere stad: de Greencontainer. Thuis ben ik bezig met het maken van een spel. Ik heb dit spel nog geen naam gegeven, want ik heb geen idee hoe ik het moet noemen.
+				</p>
+			</div>
 		</div>
 	</div>
 	<div id="greencontainer">
 		<div>
 			<h2>DE GREENCONTAINER</h2>
-			<p class="paragraph">
-				Ik ben nu op school met de Greencontainer bezig. De Greencontainer is een afvalbak, zoals de naam zelf al suggesteerd. De Greencontainer heeft echter nog wat extra eigenschappen. Als je ergens afval ziet liggen en je weet niet wat je er mee moet: meenemen naar een Greencontainer. Als je afval verzameld kun je dat bij de Greencontainer namelijk inleveren. Je gooit je afval in de container en je scant je paste, of je gebruikt de app. Wanneer je pasje gescanned is krijg je daar punten voor. Met deze punten kun je korting krijgen bij een supermarkt, of je kunt er een bioscoopkaart mee winnen, of nog veel meer.<br><br>
-				1.<span class="tab">Gooi je afval in de Greencontainer.<br>
-				2.<span class="tab">Scan je pasje of gebruik de app.<br>
-				3.<span class="tab">Krijg je punten op je account.<br>
-				4.<span class="tab">Doe er wat leuks mee.<br><br>
-				Ik werk natuurlijk niet alleen aan dit project. Ik werk samen met een groepje vrienden. Wij hebben ons groepje de naam "Team KIB" gegeven. Misschien wilt u wel wat meer weten over een paar andere projecten waar wij aan hebben gewerkt, dan kunt u naar onze <a href="https://teamkib.nl/">website</a> gaan.
-			</p>
+			<div class="textcontainer">
+				<p class="paragraph">
+					Ik ben nu op school met de Greencontainer bezig. De Greencontainer is een afvalbak, zoals de naam zelf al suggesteerd. De Greencontainer heeft echter nog wat extra eigenschappen. Als je ergens afval ziet liggen en je weet niet wat je er mee moet: meenemen naar een Greencontainer. Als je afval verzameld kun je dat bij de Greencontainer namelijk inleveren. Je gooit je afval in de container en je scant je paste, of je gebruikt de app. Wanneer je pasje gescanned
+				</p>
+
+				<table class='paragraph'>
+					<tr>
+						<td class="numbercontainer"><p>1.</p></td>
+						<td><p>Gooi je afval in de Greencontainer.</p></td>
+					</tr>
+					<tr>
+						<td class="numbercontainer"><p>2.</p></td>
+						<td><p>Scan je pasje of gebruik de app.</p></td>
+					</tr>
+					<tr>
+						<td class="numbercontainer"><p>3.</p></td>
+						<td><p>Krijg je punten op je account.</p></td>
+					</tr>
+					<tr>
+						<td class="numbercontainer"><p>4.</p></td>
+						<td><p>Doe er wat leuks mee.</p></td>
+					</tr>			
+				</table>
+				<p class="paragraph">
+					Ik werk natuurlijk niet alleen aan dit project. Ik werk samen met een groepje vrienden. Wij hebben ons groepje de naam "Team KIB" gegeven. Misschien wilt u wel wat meer weten over een paar andere projecten waar wij aan hebben gewerkt, dan kunt u naar onze <a href="https://teamkib.nl/">website</a> gaan.
+				</p>
+			</div>
 		</div>
 	</div>
 
