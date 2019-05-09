@@ -13,4 +13,8 @@ app.get('/blog', (req, res) => {
 	res.sendFile(public + 'blog/index.html');
 });
 
+app.get('/projects/sightreading', (req, res) => {
+	res.sendFile(public + 'pojects/sightreading/index.html')
+});
+
 app.listen(port, () => console.log(`Server running on port ${port}`));
