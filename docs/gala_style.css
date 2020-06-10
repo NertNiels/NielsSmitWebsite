@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Harlow Solid Italic';
+    src: url(assets/HARLOWSI.TTF);
+}
+
+@font-face {
+    font-family: 'Freestyle Script';
+    src: url(assets/FREESCPT.TTF);
+}
+
+body {
+    margin: 0;
+}
+
+.bg-image {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    background-image: url(assets/gala_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.color-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 255, 0.7);
+}
+
+.title1 {
+    position: relative;
+    text-align: center;
+    top: 10%;
+    font-family: 'Harlow Solid Italic';
+    font-size: 5em;
+    color: rgb(244, 250, 2);
+    text-shadow: 7px 5px #000000;
+}
+
+
+h2 {
+    position: relative;
+    text-align: center;
+    top: 5%;
+    font-family: 'Harlow Solid Italic';
+    font-size: 4em;
+    font-weight: lighter;
+    color: white;
+}
+
+.regels {
+    width: 70%;
+    left: 15%;
+}
+
+h3 {
+    position: relative;
+    text-align: center;
+    top: 10%;
+    font-family: 'Harlow Solid Italic';
+    font-size: 6em;
+    font-weight: lighter;
+    color: white;
+}
+
+h4 {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-family: 'Freestyle Script';
+    font-size: 2em;
+    color: white;
+    margin: 0;
+    font-weight: lighter;
+}
