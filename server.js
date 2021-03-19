@@ -24,5 +24,11 @@ app.get('/annajaneandniels', (req, res) => {
 app.get('/cum', (req, res) => {
 	res.sendFile(public + 'cum/index.html');
 });
+app.get('/cum/about', (req, res) => {
+	res.sendFile(public + 'cum/about.html');
+});
+app.get('/cum/contact', (req, res) => {
+	res.sendFile(public + 'cum/contact.html');
+});
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
